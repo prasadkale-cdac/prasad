@@ -1,0 +1,126 @@
+git config --global user.name "Kalyani-2508"
+
+git config --global user.email "erandekalyani@gmail.com"
+
+If you want to add all the files in the current directory, you can use:
+git add .
+
+Commit the Changes:
+git commit -m "Add LargestNumberSum program"
+
+To Change branch:
+git branch -M main
+
+
+Push the Code to GitHub
+git push -u origin main
+
+
+Remove repository path to add new:-
+git remote remove origin
+
+
+After changes in file on github:
+git pull
+
+
+add new Repository:-
+git remote add origin https://github.com/Kalyani-2508/GitTurorial.git
+
+
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS D:\github> git init
+Initialized empty Git repository in D:/github/.git/
+PS D:\github> git add .
+PS D:\github> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.java
+
+PS D:\github> git commit -m "Hello world created"
+[master (root-commit) 10c074a] Hello world created
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Hello.java
+PS D:\github> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS D:\github> git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS D:\github> git config
+error: no action specified
+PS D:\github> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=prasadkale790@gmail.com
+user.name=prasadkale-cdac
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+PS D:\github> git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS D:\github> git remote -v
+PS D:\github> git remote add origin https://github.com/prasadkale-cdac/prasad.git
+PS D:\github> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/prasadkale-cdac/prasad.git'
+PS D:\github> git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/prasadkale-cdac/prasad/pull/new/master
+remote:
+To https://github.com/prasadkale-cdac/prasad.git
+ * [new branch]      master -> master
+PS D:\github> git push origin master
+Everything up-to-date
+PS D:\github> 

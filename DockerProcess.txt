@@ -1,0 +1,50 @@
+
+
+In Dockerfile no extension
+# FROM openjdk:latest
+
+# WORKDIR /app
+
+# COPY ./app .
+
+# RUN javac Hellodocker.java
+
+# CMD [ "java", "Hellodocker" ]
+
+# Use a specific version of OpenJDK
+FROM openjdk:17-jdk-slim
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy only the .java file(s) into the container
+COPY ./Hellodocker.java .
+
+# Compile the Java source code
+RUN javac Hellodocker.java
+
+# Run the compiled Java program
+CMD ["java", "Hellodocker"]
+
+
+Create Hellodocker.java
+class Hellodocker
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello!");
+    }
+}
+
+Commands in Terminal on vs code:-
+docker build .
+
+docker build -t hellodocker .
+
+docker run hellodocker
+
+docker rm containerId
+
+docker rmi ImageName
+
+

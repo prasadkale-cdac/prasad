@@ -1,0 +1,19 @@
+To install WSL: wsl --install
+
+To create file:
+nano script_name.sh  
+  
+Location=ubuntu /home/dac /filename
+
+To run Shell Script:  
+./script_name.sh  
+          
+		  
+./script_name.sh: Permission denied:                                                                              
+ dac@dac-48:~$ chmod +x script_name.sh 
+
+ To run Shell Script:
+ dac@dac-48:~$ ./script_name.sh
+ 
+ output:
+ Hello, World! 
